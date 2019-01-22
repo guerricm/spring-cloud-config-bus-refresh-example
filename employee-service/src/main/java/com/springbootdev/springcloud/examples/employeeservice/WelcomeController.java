@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WelcomeController
 {
-    @Value("${app.service-name}")
+    @Value("${app.service-name:test}")
     private String serviceName;
 
     @GetMapping("/service")
